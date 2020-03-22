@@ -1,0 +1,31 @@
+2020-03-22 11:16:33.077 EDT [56692] LOG:  starting PostgreSQL 12.1 on x86_64-apple-darwin19.2.0, compiled by Apple clang version 11.0.0 (clang-1100.0.33.16), 64-bit
+2020-03-22 11:16:33.078 EDT [56692] LOG:  listening on IPv6 address "::1", port 5432
+2020-03-22 11:16:33.078 EDT [56692] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-03-22 11:16:33.078 EDT [56692] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-03-22 11:16:33.088 EDT [56693] LOG:  database system was shut down at 2020-03-22 11:15:50 EDT
+2020-03-22 11:16:33.090 EDT [56692] LOG:  database system is ready to accept connections
+2020-03-22 11:20:40.361 EDT [57164] FATAL:  role "postgres" does not exist
+2020-03-22 11:23:29.740 EDT [57174] FATAL:  database "alekseybilogur" does not exist
+2020-03-22 11:25:43.431 EDT [57191] FATAL:  role "pgadmin" does not exist
+2020-03-22 11:25:53.049 EDT [57200] FATAL:  role "postgres" does not exist
+2020-03-22 11:41:36.823 EDT [57256] FATAL:  database "alekseybilogur" does not exist
+2020-03-22 11:49:07.413 EDT [57550] FATAL:  role "postgres" does not exist
+2020-03-22 11:50:19.444 EDT [57667] FATAL:  role "postgres" does not exist
+2020-03-22 11:50:24.921 EDT [57676] FATAL:  role "aleksey" does not exist
+2020-03-22 11:50:32.085 EDT [57684] ERROR:  cannot drop the currently open database
+2020-03-22 11:50:32.085 EDT [57684] STATEMENT:  DROP DATABASE postgres;
+2020-03-22 11:52:17.931 EDT [57684] ERROR:  syntax error at or near "/" at character 1
+2020-03-22 11:52:17.931 EDT [57684] STATEMENT:  /connect trees
+	/conninfo
+	;
+2020-03-22 12:00:33.044 EDT [57803] ERROR:  syntax error at or near "/" at character 1
+2020-03-22 12:00:33.044 EDT [57803] STATEMENT:  /tables
+	;
+2020-03-22 12:09:48.577 EDT [60553] ERROR:  relation "users" already exists
+2020-03-22 12:09:48.577 EDT [60553] STATEMENT:  CREATE TABLE "users" ("id" bigserial, "username" text, "password" text, "admin" boolean, PRIMARY KEY ("id"))
+2020-03-22 12:16:04.612 EDT [63461] ERROR:  relation "users" already exists
+2020-03-22 12:16:04.612 EDT [63461] STATEMENT:  CREATE TABLE "users" ("id" bigserial, "username" text, "password" text, "admin" boolean, PRIMARY KEY ("id"))
+2020-03-22 16:00:36.124 EDT [57803] ERROR:  syntax error at or near "SELECT" at character 21
+2020-03-22 16:00:36.124 EDT [57803] STATEMENT:  SELECT * FROM users
+	SELECT * FROM users
+	;
